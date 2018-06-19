@@ -3,18 +3,4 @@ query {
     siteTitle
     copyright
   }
-  books: getBookList {
-    total
-    items {
-      _contentTypeName
-      _enabledAt
-      title
-      author {
-        name
-      }
-      coverImage {
-        s3Key
-      }
-    }
-  }
 }

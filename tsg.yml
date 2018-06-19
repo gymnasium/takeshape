@@ -9,33 +9,8 @@ routes:
   homepage:
     path: /
     template: pages/homepage.html
-    context: data/homepage.graphql
+    context: data/gymnasiumHomepage.graphql
 
-  posts:
-    path: /blog/:title
-    template: pages/posts/post.html
-    paginate:
-      pageSize: 4
-      path: /blog/page-:num
-      firstPage: /blog
-      template: pages/posts/landing.html
-      data: data/posts.graphql
-      itemName: post
-
-  books:
-    path: /books/:title
-    template: pages/book.html
-    paginate:
-      data: data/books.graphql
-      itemName: book
-
-  authors:
-    path: /authors/:name
-    template: pages/author.html
-    paginate:
-      data: data/authors.graphql
-      itemName: author
-  
   courses: 
     path: /courses/:title
     template: pages/course.html

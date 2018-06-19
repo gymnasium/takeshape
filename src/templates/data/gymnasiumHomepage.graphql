@@ -1,6 +1,7 @@
-query {
-  getFullCourseList {
-    items {
+{
+  page: getGymnasiumHome {
+    _id
+    featuredCourses {
       _id
       audience {
         audienceType

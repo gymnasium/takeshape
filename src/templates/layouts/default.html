@@ -3,24 +3,24 @@
 <head>
     <title>{% block title %}{{ site.settings.siteTitle }}{% if page.title %} - {{ page.title }}{% endif %}{% endblock %}</title>
     <meta charset="utf-8">
-    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,700" rel="stylesheet">
     <link rel="stylesheet" href="/stylesheets/main.css"/>
 </head>
 
 <body>
-{% include "partials/header.html" %}
+  {% include "partials/header.html" %}
 
-<div class="main">
-{% block content %}{% endblock %}
-</div>
+  <div class="main">
+    {% block content %}{% endblock %}
+  </div>
 
-{% include "partials/footer.html" %}
-<script src="/javascripts/main.js"></script>
+  {% include "partials/footer.html" %}
+  <script src="/javascripts/main.js"></script>
 
-<!-- iframe resize script for responsive job modules-->
-<script 
-  type="text/javascript"
-  src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/3.6.0/iframeResizer.js"></script>
+  <!-- iframe resize script for responsive job modules-->
+  <script 
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/3.6.0/iframeResizer.js">
+  </script>
 
 </body>
 </html>
