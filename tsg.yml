@@ -6,10 +6,10 @@ context:
   site: data/site.graphql
 
 routes:
-  homepage:
+  home:
     path: /
-    template: pages/homepage.html
-    context: data/gymnasiumHomepage.graphql
+    template: pages/home.html
+    context: data/home.graphql
 
   courses: 
     path: /courses/:title
