@@ -4,6 +4,7 @@ query {
     items {
       _contentTypeName
       _enabledAt
+      rating
       title
       totalPages
       type

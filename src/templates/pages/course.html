@@ -1,0 +1,25 @@
+{% extends "layouts/default.html" %}
+
+{% block content %}
+<div>
+  <h1 style="background-color: {{ course.courseType.color.hex }}; color: white;">
+    {{ course.title }}
+  </h1>
+
+  <section>
+    {{ course.about | md | safe }}
+  </section>
+</div>
+
+<div>
+  <iframe
+    src="https://gym-jobs-microservice-staging.herokuapp.com/"
+    id="jobs-microservice-frame"
+    class="gymnasium-resizable-iframe gymnasium-jobs-microservice-iframe"
+    style="width: 1px; min-width:100%; border:0; height:900px;"
+  ></iframe>
+</div>
+<script>
+    iFrameResize({ log:false }, '.gymnasium-resizable-iframe');
+</script>
+{% endblock %}

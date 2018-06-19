@@ -35,3 +35,10 @@ routes:
     paginate:
       data: data/authors.graphql
       itemName: author
+  
+  courses: 
+    path: /courses/:title
+    template: pages/course.html
+    paginate: 
+      data: data/courses.graphql
+      itemName: course

@@ -11,7 +11,7 @@
         <h1>{{ book.title }}</h1>
         <a class="author-link" href="{{ book.author | route('authors')}}">{{ book.author.name }}</a>
         <div class="meta">
-          <p>{{ book.totalPages }} pages || {{ book.type | title }} || Published {{ book.publishDate | date('MMMM D, YYYY') }}</p>
+          <p>{{ book.totalPages }} pages || {{ book.rating }}/100 || {{ book.type | title }} || Published {{ book.publishDate | date('MMMM D, YYYY') }}</p>
         </div>
         <p class="genre">{{ book.genre.title | upper }}</p>
       </header>

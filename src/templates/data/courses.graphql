@@ -1,0 +1,30 @@
+query {
+  getFullCoursesList {
+    total
+    items {
+      about
+      courseImage {
+        _id
+        caption
+        credit
+        description
+        filename
+        mimeType
+        s3Key
+        title
+        uploadStatus
+      }
+      courseType {
+        _id
+        color {
+          hex
+        }
+        title
+      }
+      description
+      isFeatured
+      releaseDate
+      title
+    }
+  }
+}
